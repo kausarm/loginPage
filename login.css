@@ -1,0 +1,185 @@
+.container-fluid{
+	min-height: 100vh;
+}
+
+.left-side{
+	background: url("../../img/left-side-login.png");
+	width: 30%;
+	height: 100vh;
+	background-size: cover;
+}
+
+.right-side{
+	width: 70%;
+}
+
+.row-top a{
+	text-decoration: none;
+	color: #FF8474;
+}
+
+.login h1{
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 42px;
+	font-weight: bold;
+}
+
+/*FORM*/
+label{
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 18px;
+}
+
+::-webkit-input-placeholder{
+	font-family: 'Lato', sans-serif;
+	font-size: 14px;
+}
+
+.form-check-label{
+	font-family: 'Lato', sans-serif;
+	font-size: 14px;
+	color: #4B4E54;
+}
+
+/*BUTTON*/
+.btn-fb{
+	width: 260px;
+	height: 40px;
+	font-size: 14px;
+	background-color: #4267B2;
+	margin-right: 8px;
+}
+
+.btn-tw{
+	width: 260px;
+	height: 40px;
+	font-size: 14px;
+	background-color: #1DA1F2; 
+	margin-right: 8px;
+}
+
+.btn-gl{
+	width: 260px;
+	height: 40px;
+	font-size: 14px;
+	color: #25272A !important;
+	background-color: #ffff; 
+	margin-right: 8px;
+	border: 1px solid #B1B4BA;
+}
+
+.btn-submit{
+	width: 260px;
+	height: 40px;
+	font-size: 14px;
+	background-color: #FF8474; 
+	margin-right: 8px;	
+}
+
+.btn-gl:hover{
+	background-color: #ffff;
+}
+
+hr{
+	width: 300px !important;
+	justify-content: flex-start;
+}
+
+.row-button{
+	width: 804px;
+}
+
+/* TABLET FRIENDLY */
+@media screen and (max-width: 768px) {
+	.right-side {
+		width: 100vh;
+		display: flex;
+		margin-left: -20px;
+	}
+
+	.left-side {
+		display: none !important;
+	}
+
+	.row-button {
+		display: flex;
+		width: 100%;
+		margin-left: 4px !important;
+	}
+
+	.button-wrapper {
+		flex-direction: column !important;
+
+	}
+
+	.btn-gl,
+	.btn-tw {
+		margin-top: 12px;
+	}
+
+	.btn-fb,
+	.btn-gl,
+	.btn-tw,
+	.btn-submit {
+		width: 100% !important;
+
+	}
+
+	.row-button {
+		margin-bottom: 30px;
+	}
+
+	.or {
+		display: none !important;
+	}
+}
+/* END TABLET FRIENDLY */
+
+
+/* MOBILE FRIENDLY */
+@media screen and (max-width: 576px) {
+	/* * {
+		overflow: hidden;
+	} */
+	.right-side{
+		width: 100vh;
+		display: flex;
+		margin-left: -20px;
+	}
+
+	.left-side {
+	display: none !important;
+	}
+
+	.row-button{
+		display: flex;
+		width: 100%;
+		margin-left: 4px !important;
+	}
+
+	.button-wrapper{
+		flex-direction: column !important;
+		
+	}
+
+	.btn-gl,.btn-tw{
+		margin-top: 12px;
+	}
+
+	.btn-fb,
+	.btn-gl,
+	.btn-tw,
+	.btn-submit {
+		width: 100% !important;
+		
+	}
+
+	.row-button{
+		margin-bottom: 30px;
+	}
+
+	.or{
+		display: none !important;
+	}
+}
+/* END MOBILE FRIENDLY */
